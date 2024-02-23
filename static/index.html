@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter App</title>
+    <script src="https://unpkg.com/htmx.org" defer></script>
+</head>
+<body>
+    <h1>Counter: <span id="counter">0</span></h1>
+    <button hx-post="/increment" hx-target="#counter" hx-swap="innerHTML">Increment</button>
+    <button hx-post="/decrement" hx-target="#counter" hx-swap="innerHTML">Decrement</button>
+</body>
+</html>
